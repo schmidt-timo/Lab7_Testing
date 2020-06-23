@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
@@ -7,11 +8,14 @@ class MainTest {
         Main main = new Main();
     }
 
-    @org.junit.jupiter.api.Test
-    void absoluteValueOf() {
+    @Test
+    void testMinValue() {
+        assertEquals(2147483647, Main.absoluteValueOf(-2147483648));
     }
 
-    // below int min
-
+    @Test
+    void testMaxValue() {
+        assertEquals(2147483647, Main.absoluteValueOf(2147483647));
+    }
 
 }
