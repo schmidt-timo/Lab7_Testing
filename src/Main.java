@@ -7,5 +7,4 @@ public class Main {
         else
             return x;
     }
-
 }

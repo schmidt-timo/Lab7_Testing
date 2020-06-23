@@ -1,4 +1,5 @@
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class MainTest {
 
@@ -7,11 +8,17 @@ class MainTest {
         Main main = new Main();
     }
 
-    @org.junit.jupiter.api.Test
-    void absoluteValueOf() {
+    //positive integer
+    @Test
+    void testPositive() {
+        assertEquals(709, Main.absoluteValueOf(709));
     }
 
-    // below int min
+    //negative integer
+    @Test
+    void testNegative(){
+        assertEquals(77, Main.absoluteValueOf(-77));
+    }
 
 
 }
