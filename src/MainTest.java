@@ -3,9 +3,10 @@ import org.junit.jupiter.api.Test;
 
 class MainTest {
 
-    @org.junit.jupiter.api.BeforeEach
-    void setUp() {
-        Main main = new Main();
+    // Odd test
+    @Test
+    void oddTest() {
+    	assertEquals(41, Main.absoluteValueOf(41));
     }
 
     //positive integer
@@ -19,4 +20,11 @@ class MainTest {
     void testNegative(){
         assertEquals(77, Main.absoluteValueOf(-77));
     }
+
+    @Test
+    void evenTest() {
+    	assertEquals(6, Main.absoluteValueOf(6));
+    }
+    
+
 }
