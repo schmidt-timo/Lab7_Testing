@@ -19,6 +19,4 @@ class MainTest {
     void testNegative(){
         assertEquals(77, Main.absoluteValueOf(-77));
     }
-
-
 }
